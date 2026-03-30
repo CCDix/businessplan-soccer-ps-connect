@@ -1,0 +1,900 @@
+[29.03.2026 22:30] blauzahn: HTML-Mockup: Soccer Skill Challenge (Deutsch)
+
+Hier ist ein responsive, mobile-first HTML-Mockup für die überarbeitete Seite:
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soccer Skill Challenge – Die Trainings-Plattform für Nachwuchsfußball</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fafafa;
+        }
+
+        /* Header / Navigation */
+        header {
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #0051a5;
+        }
+
+        .nav-links {
+            display: none;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #0051a5;
+        }
+
+        @media (min-width: 768px) {
+            .nav-links {
+                display: flex;
+            }
+        }
+
+        /* ========== HERO SECTION ========== */
+        .hero {
+            background: linear-gradient(135deg, #0051a5 0%, #1e88e5 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 400px;
+            height: 400px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .hero .subheadline {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            line-height: 1.5;
+        }
+
+        .cta-primary {
+            display: inline-block;
+            background: #10c469;
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+            box-shadow: 0 4px 15px rgba(16, 196, 105, 0.3);
+        }
+
+        .cta-primary:hover {
+            background: #0ca850;
+            transform: translateY(-2px);
+        }
+
+        @media (min-width: 768px) {
+            .hero h1 {
+                font-size: 3.5rem;
+            }
+            .hero .subheadline {
+                font-size: 1.3rem;
+            }
+        }
+
+        /* ========== SECTION GENERIC ========== */
+        section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: #0051a5;
+            font-weight: 700;
+        }
+
+        section h3 {
+[29.03.2026 22:30] blauzahn:             font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+[29.03.2026 22:30] blauzahn: /* ========== PROBLEM SECTION ========== */
+        .problem {
+            background: white;
+            border-left: 4px solid #ff6b6b;
+            padding-left: 2rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .problem h3 {
+            color: #ff6b6b;
+        }
+
+        .problem-cards {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .problem-card {
+            background: #fff9f7;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 3px solid #ff6b6b;
+        }
+
+        .problem-card .emoji {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .problem-cards {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        /* ========== SOLUTION SECTION ========== */
+        .solution {
+            background: #f0f7ff;
+            padding: 4rem 2rem;
+        }
+
+        .solution-cards {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .solution-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 81, 165, 0.08);
+            border-top: 4px solid #0051a5;
+        }
+
+        .solution-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .solution-card h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.8rem;
+            color: #0051a5;
+        }
+
+        .solution-card ul {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .solution-card li {
+            padding: 0.4rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .solution-card li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #10c469;
+            font-weight: bold;
+        }
+
+        @media (min-width: 768px) {
+            .solution-cards {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* ========== USE CASES SECTION ========== */
+        .use-cases {
+            background: white;
+        }
+
+        .use-case-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        .use-case {
+            background: #f9f9f9;
+            padding: 2rem;
+            border-radius: 12px;
+            border: 2px solid #e0e0e0;
+        }
+
+        .use-case-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .use-case h3 {
+            color: #0051a5;
+            margin-bottom: 1rem;
+        }
+
+        .use-case .person {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .use-case .story {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            border-left: 3px solid #10c469;
+        }
+
+        .use-case .benefit {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .use-case .benefit::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #10c469;
+            font-weight: bold;
+        }
+
+        @media (min-width: 768px) {
+            .use-case-container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        /* ========== FEATURES SECTION ========== */
+        .features {
+            background: #f0f7ff;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-group {
+[29.03.2026 22:30] blauzahn:             background: white;
+[29.03.2026 22:30] blauzahn: padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        }
+
+        .feature-group h4 {
+            color: #0051a5;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .feature-group ul {
+            list-style: none;
+        }
+
+        .feature-group li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .feature-group li::before {
+            content: '📱';
+            position: absolute;
+            left: 0;
+        }
+
+        @media (min-width: 768px) {
+            .features-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* ========== SOCIAL PROOF SECTION ========== */
+        .social-proof {
+            background: white;
+        }
+
+        .testimonials {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .testimonial {
+            background: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #10c469;
+        }
+
+        .testimonial-quote {
+            font-style: italic;
+            margin-bottom: 1rem;
+            color: #555;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: #0051a5;
+            font-size: 0.9rem;
+        }
+
+        @media (min-width: 768px) {
+            .testimonials {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* ========== PRICING SECTION ========== */
+        .pricing {
+            background: #f0f7ff;
+        }
+
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .pricing-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 81, 165, 0.1);
+            border: 2px solid transparent;
+            transition: border-color 0.3s, transform 0.3s;
+        }
+
+        .pricing-card:hover {
+            border-color: #0051a5;
+            transform: translateY(-4px);
+        }
+
+        .pricing-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .pricing-card h3 {
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        .pricing-card .price {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #0051a5;
+            margin: 1rem 0;
+        }
+
+        .pricing-card ul {
+            list-style: none;
+            text-align: left;
+            margin: 1.5rem 0;
+        }
+
+        .pricing-card li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            font-size: 0.95rem;
+        }
+
+        .pricing-card li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #10c469;
+            font-weight: bold;
+        }
+
+        .pricing-card .cta-secondary {
+            display: inline-block;
+            background: #0051a5;
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: background 0.3s;
+        }
+
+        .pricing-card .cta-secondary:hover {
+            background: #003d7a;
+        }
+
+        @media (min-width: 768px) {
+            .pricing-cards {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* ========== DUAL CTA SECTION ========== */
+        .dual-cta {
+            background: linear-gradient(135deg, #0051a5 0%, #1e88e5 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+[29.03.2026 22:30] blauzahn:         .dual-cta h2 {
+[29.03.2026 22:30] blauzahn: color: white;
+            margin-bottom: 2rem;
+        }
+
+        .cta-buttons {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-button {
+            background: white;
+            color: #0051a5;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            border: 2px solid white;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background: #10c469;
+            color: white;
+            border-color: #10c469;
+        }
+
+        .cta-button .icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .cta-buttons {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* ========== FAQ SECTION ========== */
+        .faq {
+            background: white;
+        }
+
+        .faq-item {
+            background: #f9f9f9;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .faq-item:hover {
+            background: #f0f7ff;
+            border-left: 4px solid #0051a5;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #0051a5;
+            margin-bottom: 0.5rem;
+        }
+
+        .faq-answer {
+            color: #666;
+            font-size: 0.95rem;
+            display: none;
+        }
+
+        .faq-item.open .faq-answer {
+            display: block;
+        }
+
+        /* ========== FOOTER ========== */
+        footer {
+            background: #0051a5;
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #10c469;
+        }
+
+        .footer-copyright {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        @media (min-width: 768px) {
+            .footer-links {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<header>
+    <nav>
+        <div class="logo">⚽ Soccer Skill Challenge</div>
+        <ul class="nav-links">
+            <li><a href="#solution">Lösung</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Preise</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Trainiere wie die Profis. Miss deine Fortschritte.</h1>
+        <p class="subheadline">Mit der Soccer Skill Challenge dokumentieren junge Fußballer ihre Entwicklung objektiv. Trainer sehen exakt, wo sie stehen. Eltern verstehen, wie ihr Kind wächst.</p>
+        <button class="cta-primary">Kostenlos Starten</button>
+    </div>
+</section>
+
+<!-- PROBLEM SECTION -->
+<section>
+    <h2>Das Problem</h2>
+    <div class="problem">
+        <h3>❌ Dein Kind trainiert hart. Aber wird es auch wirklich besser?</h3>
+        <p style="margin-bottom: 1.5rem; color: #666;">
+[29.03.2026 22:30] blauzahn:             Viele Trainer wissen nicht genau, wie sich ihre Spieler entwickeln. 
+            Eltern verstehen nicht, warum ihr Kind 2x die Woche trainiert, 
+            aber nicht in eine bessere Mannschaft kommt.
+        </p>
+        <div class="problem-cards">
+            <div class="problem-card">
+[29.03.2026 22:30] blauzahn: <div class="emoji">😕</div>
+                <strong>Subjektive Bewertung</strong>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #666;">Nur Trainer-Meinung, keine objektiven Daten</p>
+            </div>
+            <div class="problem-card">
+                <div class="emoji">❓</div>
+                <strong>Keine Fortschritts-Dokumentation</strong>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #666;">Wie hat sich mein Kind entwickelt?</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SOLUTION SECTION -->
+<section class="solution" id="solution">
+    <h2>Die Lösung: 3 Komponenten für echte Entwicklung</h2>
+    <div class="solution-cards">
+        <div class="solution-card">
+            <div class="icon">📊</div>
+            <h4>Objektive Messung</h4>
+            <ul>
+                <li>Ball-Kontrolle (gemessen)</li>
+                <li>Pass-Genauigkeit (in %)</li>
+                <li>Dribbel-Technik (KI-Analyse)</li>
+                <li>Schuss-Genauigkeit</li>
+                <li>Athletische Leistung</li>
+            </ul>
+        </div>
+        <div class="solution-card">
+            <div class="icon">📈</div>
+            <h4>Langzeit-Portfolio</h4>
+            <ul>
+                <li>März: Pass-Genauigkeit 72%</li>
+                <li>Juni: Pass-Genauigkeit 81% (+12%)</li>
+                <li>Sept: 88% (+20% in 6 Mo.)</li>
+                <li>Exportierbar für Bewerbungen</li>
+                <li>Motivation durch sichtbaren Fortschritt</li>
+            </ul>
+        </div>
+        <div class="solution-card">
+            <div class="icon">🎯</div>
+            <h4>Datengestützter Trainings-Plan</h4>
+            <ul>
+                <li>Trainer sehen: Wer braucht was?</li>
+                <li>Automatische Prioritäten</li>
+                <li>Effizienteres Training</li>
+                <li>Bessere Talentförderung</li>
+                <li>Verletzungs-Prävention</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- USE CASES SECTION -->
+<section class="use-cases">
+    <h2>So funktioniert es in der Praxis</h2>
+    <div class="use-case-container">
+        <!-- Trainer Case -->
+        <div class="use-case">
+            <div class="use-case-icon">👨‍🏫</div>
+            <h3>Der Trainer</h3>
+            <p class="person">Marco, U14-Trainer bei der SG Musterstadt</p>
+            
+            <div style="margin: 1.5rem 0; background: #fff3e0; padding: 1rem; border-radius: 8px;">
+                <strong>Früher:</strong> Subjektive Noten, frustrierte Eltern
+            </div>
+
+            <p style="font-weight: 600; margin-bottom: 1rem;">Jetzt:</p>
+            <div class="benefit">Alle Spieler machen die Skill Challenge</div>
+            <div class="benefit">Marco sieht objektiv: "Diese 8 sind Top-10%"</div>
+            <div class="benefit">Er plant Trainings-Schwerpunkte</div>
+            <div class="benefit">Eltern sehen Fortschritt</div>
+            <div class="benefit">Talente werden früher erkannt</div>
+
+            <div style="margin-top: 1rem; padding: 1rem; background: #e8f5e9; border-radius: 8px; color: #2e7d32; font-weight: 600;">
+                ✓ Marco ist effizienter. Spieler verbessern sich schneller.
+            </div>
+        </div>
+
+        <!-- Eltern Case -->
+[29.03.2026 22:30] blauzahn:         <div class="use-case">
+            <div class="use-case-icon">👨‍👩‍👧</div>
+            <h3>Die Eltern</h3>
+            <p class="person">Familie Schmidt: Anna (12), Nachwuchsfußballerin</p>
+            
+            <div style="margin: 1.5rem 0; background: #fff3e0; padding: 1rem; border-radius: 8px;">
+                <strong>Früher:</strong> "Wird Anna besser? Welcher Club passt?"
+            </div>
+
+            <p style="font-weight: 600; margin-bottom: 1rem;">Jetzt:</p>
+            <div class="benefit">Anna lädt Trainings-Videos hoch</div>
+            <div class="benefit">Familie sieht: "+18% in 3 Monaten"</div>
+[29.03.2026 22:30] blauzahn: <div class="benefit">Portfolio für Club-Bewerbungen</div>
+            <div class="benefit">Anna ist motiviert</div>
+            <div class="benefit">Transparenz über Entwicklung</div>
+
+            <div style="margin-top: 1rem; padding: 1rem; background: #e8f5e9; border-radius: 8px; color: #2e7d32; font-weight: 600;">
+                ✓ Familie versteht & unterstützt besser
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES SECTION -->
+<section class="features" id="features">
+    <h2>Was bietet die Soccer Skill Challenge?</h2>
+    
+    <h3 style="text-align: left; margin-top: 2rem;">Für Spieler:</h3>
+    <div class="features-grid">
+        <div class="feature-group">
+            <h4>📱 Mobile App</h4>
+            <ul>
+                <li>Video hochladen</li>
+                <li>KI-Analyse (2–5 min)</li>
+                <li>Dashboard & Trends</li>
+            </ul>
+        </div>
+        <div class="feature-group">
+            <h4>🏆 Gamification</h4>
+            <ul>
+                <li>Achievements</li>
+                <li>Leaderboards</li>
+                <li>Vergleiche mit Peers</li>
+            </ul>
+        </div>
+        <div class="feature-group">
+            <h4>📄 Portfolio</h4>
+            <ul>
+                <li>Langzeit-Daten</li>
+                <li>Exportierbar als PDF</li>
+                <li>Für Bewerbungen</li>
+            </ul>
+        </div>
+    </div>
+
+    <h3 style="text-align: left; margin-top: 2rem;">Für Trainer:</h3>
+    <div class="features-grid">
+        <div class="feature-group">
+            <h4>👥 Team-Dashboard</h4>
+            <ul>
+                <li>Alle Spieler-Daten</li>
+                <li>Vergleiche</li>
+                <li>Trends</li>
+            </ul>
+        </div>
+        <div class="feature-group">
+            <h4>📋 Trainings-Planung</h4>
+            <ul>
+                <li>Datengestützte Pläne</li>
+                <li>Prioritäten setzen</li>
+                <li>Effizienteres Training</li>
+            </ul>
+        </div>
+        <div class="feature-group">
+            <h4>📊 Talent-Scouting</h4>
+            <ul>
+                <li>Automatische Erkennung</li>
+                <li>Verletzungs-Warnung</li>
+                <li>Entwicklungsprognose</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- SOCIAL PROOF SECTION -->
+<section class="social-proof">
+    <h2>Vertraut von Trainern und Clubs in Deutschland</h2>
+    <div class="testimonials">
+        <div class="testimonial">
+            <div class="testimonial-quote">"Mit der Challenge sehen wir, wer wirklich Potenzial hat. Und unsere Trainings-Planung ist viel effizienter."</div>
+            <div class="testimonial-author">— Marco K., U14 Trainer, SG Musterstadt</div>
+        </div>
+        <div class="testimonial">
+            <div class="testimonial-quote">"Meine Tochter war motivierter, als sie ihre Fortschritte sah. Und wir verstehen jetzt besser, wo sie steht."</div>
+            <div class="testimonial-author">— Familie Schmidt, Eltern</div>
+        </div>
+        <div class="testimonial">
+            <div class="testimonial-quote">"Das spart uns 5 Stunden pro Woche an Manual-Analyse. Und die Daten sind objektiv."</div>
+[29.03.2026 22:30] blauzahn:             <div class="testimonial-author">— Coach Thomas, Bezirksliga</div>
+        </div>
+    </div>
+</section>
+
+<!-- PRICING SECTION -->
+<section class="pricing" id="pricing">
+    <h2>Tarife für jeden</h2>
+    <div class="pricing-cards">
+        <div class="pricing-card">
+            <div class="icon">🎮</div>
+            <h3>Spieler</h3>
+            <div class="price">€5<span style="font-size: 0.5em; color: #999;">/Monat</span></div>
+            <ul>
+                <li>Unbegrenzte Videos</li>
+                <li>KI-Analyse</li>
+                <li>Dashboard</li>
+                <li>Portfolio</li>
+                <li>Gamification</li>
+            </ul>
+            <button class="cta-secondary">Kostenlos Starten</button>
+        </div>
+[29.03.2026 22:30] blauzahn: <div class="pricing-card" style="border-top-color: #10c469; transform: scale(1.05);">
+            <div class="icon">👥</div>
+            <h3>Trainer / Club</h3>
+            <div class="price">€600<span style="font-size: 0.5em; color: #999;">/Jahr</span></div>
+            <ul>
+                <li>Team-Dashboard</li>
+                <li>30 Spieler</li>
+                <li>Trainings-Planung</li>
+                <li>Talent-Scouting</li>
+                <li>Support</li>
+            </ul>
+            <button class="cta-secondary">Club einrichten</button>
+        </div>
+
+        <div class="pricing-card">
+            <div class="icon">🏅</div>
+            <h3>Verband</h3>
+            <div class="price">Auf Anfrage</div>
+            <ul>
+                <li>White-Label</li>
+                <li>Multi-Club</li>
+                <li>Integration</li>
+                <li>Talentförderung</li>
+                <li>Dedicated Support</li>
+            </ul>
+            <button class="cta-secondary">Kontakt</button>
+        </div>
+    </div>
+</section>
+
+<!-- DUAL CTA SECTION -->
+<section class="dual-cta">
+    <h2>Bereit für echte Entwicklung?</h2>
+    <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">
+        Dokumentieren Sie die Fortschritte. Verstehen Sie, wo Ihr Kind steht. 
+        Arbeiten Sie gezielt an der Verbesserung.
+    </p>
+    <div class="cta-buttons">
+        <button class="cta-button">
+            <div class="icon">🎮</div>
+            <strong>Ich bin Spieler</strong>
+            <div style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.8;">Kostenlos starten</div>
+        </button>
+        <button class="cta-button">
+            <div class="icon">📋</div>
+            <strong>Ich bin
