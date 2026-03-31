@@ -1,6 +1,6 @@
-# BUSINESSPLAN: soccer.ps-connect Performance Analytics Platform
+# BUSINESSPLAN: Body Performance App
 
-## AI-gestützte Video-Performance-Analytics für Amateur-Fußballer (14–25 Jahre)
+## AI-gestützte Video-Performance-Analytics für Prospects im Sport (14–25 Jahre)
 
 ---
 
@@ -9,13 +9,13 @@
 | Feld | Details |
 |------|---------|
 | **Unternehmen** | Conscious Content GmbH & Co. KG |
-| **Produkt** | AI-gestützte Video-Performance-Analytics-Plattform für Fußballer (14–25 Jahre) |
+| **Produkt** | AI-gestützte Video-Performance-Analytics-Plattform für Athleten (14–25 Jahre) |
 | **Launch** | September 2026 |
 | **Zielmarkt** | Europa (Fokus: Deutschland, Frankreich, Spanien, Italien) |
 | **Geschäftsmodell** | Abo-Modell (B2C: €5/Monat \| B2B: €50/Monat Verein) |
 
 ### Kernthese
-Die Fußball-Sporttech-Branche wächst mit 21,9% CAGR (2024–2033). Es gibt keine konsumerfreundliche, KI-basierte Video-Analytics-Lösung für Amateur-Fußballer (14–25 Jahre). Catapult & Kinexon richten sich an Profis/Clubs. Wir besetzen den massiven B2C-Segment: Individuelle Athleten + Amateurclubs.
+Die Sporttech-Branche wächst mit 21,9% CAGR (2024–2033). Es gibt keine konsumerfreundliche, KI-basierte Video-Analytics-Lösung für Athleten (14–25 Jahre). Catapult & Kinexon richten sich an Profis/Clubs. Wir besetzen den massiven B2C-Segment: Individuelle Athleten + Amateurclubs.
 
 ### Finanzielle Highlights (Projektion)
 
@@ -36,7 +36,7 @@ Die Fußball-Sporttech-Branche wächst mit 21,9% CAGR (2024–2033). Es gibt kei
 
 ### 1.1 IST-Zustand: Wo sind die Probleme?
 
-#### Für Jugendliche/Amateur-Fußballer (14–25J):
+#### Für Athleten (14–25J):
 - ❌ Keine objektive Leistungsmessung (nur subjektive Trainer-Bewertung)
 - ❌ Keine Dokumentation von Fortschritten über Jahre (Portfolio für Bewerbungen)
 - ❌ Keine KI-gestützte Echtzeit-Rückmeldung zur Technik/Bewegung
@@ -57,7 +57,7 @@ Die Fußball-Sporttech-Branche wächst mit 21,9% CAGR (2024–2033). Es gibt kei
 - 🇪🇺 **Europa Fußballspieler 14–25J:** ~4,5 Millionen organisierte Spieler
 - 📱 **Mobile Sports App Adoption:** 65% der 16–25J nutzen min. 1 Fitness/Sports-App
 
-#### Addressable Market (TAM)
+#### Addressable Market (TAM - Fußball)
 - **SAM (serviceable market):** 2,5M Fußballer (55% digitale Adoption)
 - **SOM (serviceable obtainable):** Jahr 1–5: 650K Nutzer (26% Marktanteil realistisch)
 
@@ -70,29 +70,23 @@ Die Fußball-Sporttech-Branche wächst mit 21,9% CAGR (2024–2033). Es gibt kei
 #### Für Athleten (B2C):
 
 **1. KI-Video-Analyse**
-- Upload von Trainings-/Match-Videos
-- Computer Vision analysiert in Echtzeit: Laufwege, Ballkontakt, Schusstatistik, Technik-Fehler
-- Joint-Angle-Berechnung: Fußposition, Rumpfhaltung, Armstellung
+- Upload von Trainings-Videos
+- Computer Vision analysiert:
 - ✅ Ergebnis: Automatischer Performance-Report in 2–5 Min
 
 **2. Persönliches Performance-Dashboard**
 - Trend-Analyse über Wochen/Monate/Jahre
-- KPIs: Ballkontakte/90 Min, Pass-Accuracy, Sprungkraft, Schussgeschwindigkeit
+- KPIs
 - Vergleich mit Altersgenossen (anonymisiert)
 - ✅ Trägt zur Portfolio-Bildung bei (für Bewerbungen bei Clubs)
 
-**3. Intelligente Coaching-Insights**
-- KI identifiziert Stärken & Schwächen automatisch
-- Personalisierte Trainings-Tipps basierend auf Daten
-- ✅ "Deine Passgenauigkeit fiel von 82% auf 75%. Fokus: Kurzpässe"
-
-**4. Gamification & Social Sharing**
-- Achievements ("First 90 Min Error-Free", "Top 10% Sprint Speed")
+**3. Gamification & Social Sharing**
+- Achievements
 - Video-Clips zum Teilen auf Instagram/TikTok
 - Friend-Vergleiche (leaderboards)
 - ✅ Virale Komponente → "Members werben Members"
 
-**5. Entwicklungs-Portfolio**
+**4. Entwicklungs-Portfolio**
 - Zentrale Dokumentation aller Analysen seit Registrierung
 - Exportierbar als PDF für Bewerbungen
 - ✅ "Ich habe 18% Leistungsanstieg in 6 Monaten"
@@ -155,7 +149,7 @@ Die Fußball-Sporttech-Branche wächst mit 21,9% CAGR (2024–2033). Es gibt kei
 **Strategie: Personal Network + Community Bootstrap**
 
 1. **Seeding via ps-connect Community**
-   - Existing users von soccer.ps-connect.com erhalten Early-Access
+   - Existing users ps-connect.com erhalten Early-Access
    - €5/Monat (mit 3-Monats-Gratis-Trial für Gründer)
    - ✅ Ziel: 2.000 Nutzer in M1–M3
 
@@ -179,7 +173,7 @@ Die Fußball-Sporttech-Branche wächst mit 21,9% CAGR (2024–2033). Es gibt kei
 **Strategie: Paid + Organic + Influencer**
 
 1. **Influencer & Creator Partnerships**
-   - Micro-Influencer aus Fußball-Community (20K–500K Follower)
+   - Micro-Influencer aus Community (20K–500K Follower)
    - Kostenlose Plattform-Nutzung gegen Content-Bereitschaft
    - ✅ Ziel: 5–10 Influencer | €500–1.000 Wert pro Partner
 
@@ -189,21 +183,21 @@ Die Fußball-Sporttech-Branche wächst mit 21,9% CAGR (2024–2033). Es gibt kei
    - ✅ Ziel: 15K–20K neue Nutzer
 
 3. **Grassroot-Marketing**
-   - Präsenz auf Jugend-Fußball-Turnieren
+   - Präsenz auf Jugend-Events
    - Demo-Stationen in Fußball-Clubs
    - Sponsorships von Regional-Ligen
    - ✅ Ziel: 10K Kontakte, 3K Konversionen
 
 4. **Content Marketing**
    - Blog: "Top 10 Performance-Tipps", "Spieler-Entwicklungs-Stories"
-   - SEO: "Fußball Analytics für Jugendliche", "Performance Tracking"
+   - SEO: "Analytics für Jugendliche", "Performance Tracking"
    - ✅ Ziel: 50K organische Visits/Monat
 ### 4.3 Phase 3: Scale & Market Consolidation (Sept 2027+)
 **Strategie: Enterprise Sales + Continued Viral Growth**
 
 1. **B2B Sales (Club/Verbands-Lizenzen)**
    - Targeted Outreach an 500 mittlere Clubs (150–500 Spieler)
-   - White-Label-Option für Fußball-Verbände
+   - White-Label-Option für Verbände
    - ✅ Ziel: 200–300 Club-Lizenzen
 
 2. **Paid Marketing Scale-up**
@@ -212,7 +206,7 @@ Die Fußball-Sporttech-Branche wächst mit 21,9% CAGR (2024–2033). Es gibt kei
    - ✅ Ziel: 50K–80K neue Nutzer/Monat
 
 3. **Partnership mit Verbänden**
-   - Integration in DFB-Talentförderung, Ligasysteme
+   - Integration in Talentförderung, Ligasysteme
    - White-Label für Regionalverbände
    - ✅ Ziel: 10–20 Verband-Lizenzen
 
@@ -311,7 +305,7 @@ Die Fußball-Sporttech-Branche wächst mit 21,9% CAGR (2024–2033). Es gibt kei
 
 **B2B Akquisitions-Möglichkeiten:**
 - Bundled mit Trainings-Apps
-- White-Label für Fußball-Verbände
+- White-Label für Verbände
 - Integration in Clubs-Management-Systeme
 
 ---
@@ -398,7 +392,7 @@ Die Fußball-Sporttech-Branche wächst mit 21,9% CAGR (2024–2033). Es gibt kei
 Diese Lösung adressiert einen **unversorgt massiven Markt** (4,5M Amateure) mit einer **technologisch überlegenen, kostengünstigen Lösung**. Mit dem Freemium + Viral-Growth-Modell, dem Club-Lizenz-Upsell und der **existierenden ps-connect Community** ist es hochgradig kapitalgünstig zu launchen.
 
 ### INVESTITIONS-HIGHLIGHTS:
-- ✅ TAM: €500M+ (14–25 Jahre Fußballer in Europa)
+- ✅ TAM: €500M+ (14–25 Jahre Athleten in Europa)
 - ✅ First-Mover in Consumer-KI-Video
 - ✅ Break-Even nach 9 Monaten
 - ✅ Year 5 Revenue Target: €41M | EBITDA: 49%
@@ -407,7 +401,7 @@ Diese Lösung adressiert einen **unversorgt massiven Markt** (4,5M Amateure) mit
 
 ---
 
-**Erstellt: 27. März 2026**  
+**Erstellt: September 2025**  
 **Version: 1.0**
 
 
